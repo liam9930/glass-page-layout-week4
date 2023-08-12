@@ -1,3 +1,171 @@
-.index-title {
-  font-size: 100px;
+.main {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.locationTitle {
+    font-size: 48px;
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+    margin-top: 96px;
+    font-weight: bold;
+}
+
+.selectStores {
+    margin-top: 33px;
+
+    .dropdown {
+        margin-left: 16px;
+        position: relative;
+        border: 1px solid #CED4DA;
+        overflow: hidden;
+    }
+
+    select {
+        font-size: 18px;
+        line-height: 26px;
+        border: none;
+        padding: 5px 166px 5px 12px;
+        appearance: none;
+        background-color: white;
+    }
+
+    .dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 48px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+    }
+
+}
+
+.storeInfo {
+    margin-top: 41px;
+    margin-bottom: 80px;
+
+    .content {
+        margin-right: 24px;
+        width: 526px;
+    }
+
+    .photo {
+        height: 224px;
+        background-image: url(../images/storepage-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .storeName {
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+    }
+
+    .storeName,
+    .contactInfo {
+        padding-left: 24px;
+        padding-right: 24px;
+        border: 1px solid #00000020;
+    }
+
+    .contactInfo {
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        li {
+            display: flex;
+        }
+
+        li:nth-child(1),
+        li:nth-child(2) {
+            margin-bottom: 8px;
+        }
+
+        span {
+            margin-right: 11px;
+            flex: 0 0 16px
+        }
+    }
+
+    .map {
+        width: 746px;
+        background-image: url(../images/map.png);
+        background-size: contain;
+        background-position: center;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .storeInfo {
+
+        display: block;
+
+        .content {
+            width: 100%;
+            display: flex;
+            margin-right: 0px;
+            margin-bottom: 24px;
+
+            .photo {
+                width: 50%;
+                height: auto;
+                margin-right: 24px;
+            }
+
+            .text-container {
+                width: 50%;
+
+            }
+
+
+        }
+
+        .contactInfo {
+            font-size: 20px;
+
+        }
+
+        .map {
+            width: 100%;
+            height: 414px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .locationTitle {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+
+    .storeInfo .content {
+        display: block;
+
+        .photo,
+        .text-container {
+            width: 100%;
+        }
+
+        .photo {
+            height: 224px;
+        }
+    }
+
+    .selectStores {
+        font-size: 16px;
+        .dropdown{
+            margin-left: 8px;            
+        }
+        select {
+            padding-right: 75px;
+        }
+    }
+
 }

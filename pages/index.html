@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>眼鏡官網</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main class="container main">
+      <h2 class="locationTitle">門市據點</h2>
+      <div class="selectStores d-flex ai-c">
+        <p class="title">選擇分店</p>
+        <div class="dropdown">
+          <select>
+            <option><p>台北中山旗艦店</p></option>
+          </select>
+          <div class="dropdown-icon">
+            <span class="material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="storeInfo d-flex">
+        <div class="content">
+          <div class="photo">
+            <!-- <img src="../assets/images/storepage-1.png" alt="店內"> -->
+          </div>
+          <div class="text-container">
+            <p class="storeName">台北中山旗艦店</p>
+            <ul class="contactInfo">
+              <li><span class="material-symbols-outlined">
+                  call
+                </span>電話：(02)000-1234</li>
+              <li><span class="material-symbols-outlined">
+                  schedule
+                </span>營業時間：10:00-21:00</li>
+              <li><span class="material-symbols-outlined">
+                  location_on
+                </span>地址：台北市中山區南京東路25巷2-1號</li>
+            </ul>
+          </div>
+        </div>
+        <div class="map">
+          <!-- <img src="../assets/images/map.png" alt="地圖位置" class="image"> -->
+        </div>
+      </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

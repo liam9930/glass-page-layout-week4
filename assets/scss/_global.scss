@@ -28,13 +28,6 @@ body {
 }
 
 
-h2 {
-    font-size: 40;
-}
-
-h3 {
-    font-size: 32px;
-}
 
 a {
     color: #fff;
@@ -94,6 +87,11 @@ button {
     margin: 0 auto;
     padding: 0px 36px;
 }
+@media(max-width:992px){
+    .container{
+      padding: 0 16px;
+    }
+}
 
 @media(max-width:768px) {
     .container {
@@ -101,6 +99,18 @@ button {
         margin: 0 auto;
     }
 }
+
+.main {
+    padding: 0 36px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+@media(max-width:576px){
+    .main{
+      padding: 0 14px;
+    }
+}
+
 
 .ol-a {
     outline: auto;

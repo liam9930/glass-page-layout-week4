@@ -1,0 +1,13 @@
+.title-primary {
+    font-size: 48px;
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+    margin-top: 96px;
+    font-weight: bold;
+}
+@media (max-width: 576px) {
+    .title-primary {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+}

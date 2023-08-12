@@ -1,0 +1,41 @@
+.quesTitle{
+    margin-top: 32px;
+}
+
+.quesTitle,.ques{
+    font-weight: bold;
+}
+.questionList{
+    margin-top: 24px;
+    margin-bottom: 80px;
+    .item:nth-child(1){
+        margin-top: 0;
+    }
+    .item{
+        margin-top: 32px;
+    }
+    .ans{
+        margin-top: 8px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .questionList{
+        margin-bottom: 64px;
+        .ques{
+            font-size: 20px;
+        }
+        .ans{
+            font-size: 16px;
+        }
+        .item{
+            margin-top: 24px;
+        }
+    }
+    .quesTitle{
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
+}

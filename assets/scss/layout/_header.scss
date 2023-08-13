@@ -1,5 +1,13 @@
 .header{
-  background-color: #AA0601;
+  background-color: $primary;
+  @include b992{
+    padding-top: 16px;
+  }
+  .container{
+    @include b992{
+      display: block;
+    }
+  }
   .logo{
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
     width:80px;
@@ -10,38 +18,29 @@
     white-space: nowrap;
 
   }
-
-  .item{
-    margin-left: 64px;
-    text-align: center;
-    a{
-      padding: 25px 0;
-    }
-  }
- 
-}
-
-@media(max-width:992px){
-  .header{
-    padding-top: 16px;
-  }
-  .header .container{
-    display: block;
-    
-    .nav{
+  .nav{
+    @include b992{
       flex-wrap:wrap;
       margin-top: 15.43px;
       margin-left: -16px;
       margin-right: -16px;
     }
-    .item{
+  }
+
+  .item{
+    margin-left: 64px;
+    text-align: center;
+    @include b992{
       width:50%;
       margin-left: 0;
       border: 1px solid #ffffff;
-      a{
+    }
+    a{
+      padding: 25px 0;
+      @include b992{
         padding: 12px 0;
       }
     }
   }
-
+ 
 }

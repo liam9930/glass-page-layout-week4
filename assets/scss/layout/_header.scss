@@ -1,7 +1,7 @@
 .header{
   background-color: $primary;
   @include b992{
-    padding-top: 16px;
+    padding-top: 12px;
   }
   .container{
     @include b992{
@@ -22,8 +22,8 @@
     @include b992{
       flex-wrap:wrap;
       margin-top: 15.43px;
-      margin-left: -16px;
-      margin-right: -16px;
+      margin-left: -12px;
+      margin-right: -12px;
     }
   }
 
